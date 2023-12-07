@@ -1,0 +1,599 @@
+@media (max-width:1450px) {
+    .right img {
+        width: 550px;
+        margin-right: 5rem;
+    }
+
+    .right div {
+        top: 20%;
+        height: 31rem;
+        width: 45rem;
+    }
+}
+
+@media(max-width:1260px) {
+    header {
+        margin: 0 10rem;
+    }
+
+    main .section1 {
+        margin-left: 10rem;
+    }
+
+    .left h1 {
+        font-size: 3.5rem;
+    }
+
+    .socials {
+        display: flex;
+    }
+}
+
+@media(max-width:1160px) {
+    .section2 {
+        height: auto;
+    }
+
+    .left p {
+        width: auto;
+    }
+
+    .right img {
+        width: 450px;
+    }
+
+    .right div {
+        width: 35rem;
+        height: 25rem;
+        top: 18%;
+    }
+
+    .left2 img {
+        width: 450px;
+    }
+
+    .section2 .left2 div {
+        width: 45rem;
+        height: 25rem;
+        top: 38%;
+    }
+
+    .section2 .right2 {
+        transform: translateX(10px);
+    }
+
+    .mainfooter nav {
+        margin: 2rem 10rem;
+    }
+
+}
+
+@media (max-width:1000px) {
+    html {
+        font-size: 8px;
+    }
+
+    .right div {
+        width: 45rem;
+        height: 30rem;
+    }
+
+    main p {
+        font-size: 15px !important;
+    }
+
+    nav li {
+        font-size: 12px !important;
+    }
+
+    .section3 .cards {
+        margin-top: 0;
+    }
+
+    .join h1 {
+        width: 360px;
+        margin: 4rem;
+    }
+
+    .cards .firefoxCard {
+        margin: 12rem;
+    }
+
+    .section2 .left2 div {
+        height: 30rem;
+    }
+
+    .faqs .faq {
+        width: 45vw;
+    }
+}
+
+@media (max-width:900px) {
+    main .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        position: relative;
+    }
+
+    .right img {
+        width: 550px;
+    }
+
+    .right .bg {
+        right: 0;
+        width: 70rem;
+        height: 37rem;
+        top: 11%;
+    }
+
+    .left {
+        order: 1;
+    }
+
+    .left h1 {
+        font-size: 5rem;
+        width: auto;
+    }
+
+    .left p {
+        width: 530px;
+        font-size: 2.4rem !important;
+        margin: 2rem 0;
+    }
+
+    .features {
+        margin-top: 10rem;
+    }
+
+    .section2 {
+        flex-direction: column;
+        margin: 10rem 0;
+    }
+
+    .section2 .left2 div {
+        width: 60%;
+        top: 15%;
+    }
+
+    .section2 .right2 {
+        margin-top: 10rem;
+    }
+
+    .section2 .right2 h1 {
+        font-size: 4rem;
+    }
+
+    .section2 .right2 p {
+        width: 70rem;
+        font-size: 2.3rem;
+        line-height: 3rem;
+        font-size: 2rem !important;
+    }
+
+    .section3 h1 {
+        font-size: 3.5rem;
+    }
+
+    .section3 .para {
+        font-size: 2.2rem !important;
+        line-height: 3rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        transform: translate(0, 0) !important;
+        margin-top: 10rem !important;
+    }
+
+    .cards .firefoxCard {
+        margin: 0;
+    }
+
+    .Card img {
+        width: 15vw;
+    }
+
+    .card h2 {
+        font-size: 2.8rem;
+    }
+
+    .card p {
+        font-size: 2rem;
+    }
+
+    .card .dots {
+        width: 42vw;
+    }
+
+    .section4 {
+        margin-top: 15rem;
+    }
+
+    .section4 h1 {
+        font-size: 3.5rem;
+    }
+
+    .section4 .para {
+        font-size: 2.1rem !important;
+    }
+
+    .faqs .faq {
+        width: 50vw;
+    }
+
+    .faq .question {
+        font-size: 2.5rem !important;
+    }
+
+    .mainfooter nav {
+        margin: 2rem 5rem;
+    }
+
+    .mainfooter .logo {
+        width: 130px;
+    }
+}
+
+@media(max-width:650px) {
+    header {
+        justify-content: space-between;
+        height: 10vh;
+        margin: 0 4rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menubtn {
+        display: block;
+    }
+
+    .menuActive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #252b46eb;
+        z-index: 10;
+    }
+
+    .menuActiveLis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        /* border-top: 2px solid gray; */
+        border-bottom: 2px solid gray;
+        font-size: 3rem !important;
+        margin: 2rem 0;
+        width: 90vw;
+        color: white;
+    }
+
+    .menuActiveBtn {
+        margin: 3rem 0;
+        width: 90vw;
+        font-size: 2rem;
+        padding: 2.5rem;
+    }
+
+    .closebtn {
+        display: block;
+        transform: translate(265px, -40px);
+        width: 25px;
+    }
+
+    .right {
+        margin: 4rem;
+    }
+
+    .right img {
+        width: 400px;
+    }
+
+    .right .bg {
+        width: 50rem;
+        height: 30rem;
+    }
+
+    .section1 .left {
+        margin-left: 5rem !important;
+        margin-right: 5rem;
+    }
+
+    .section1 .left {
+        margin-top: 2rem;
+    }
+
+
+
+    .left h1 {
+        font-size: 4rem;
+    }
+
+    .left p {
+        width: auto;
+    }
+
+
+
+    .features .featurestab {
+        flex-direction: column;
+        transform: translateX(0);
+    }
+
+    .section2 {
+        margin: 0;
+    }
+
+    .right2 h1 {
+        font-size: 4rem;
+    }
+
+    .section2 .right2 p {
+        width: 50rem;
+    }
+
+    .mainfooter {
+        flex-direction: column;
+    }
+
+    .mainfooter nav {
+        flex-direction: column;
+    }
+
+
+    .mainfooter nav .logo {
+        margin: 2rem 0;
+    }
+
+    .mainfooter nav li {
+        font-size: 2rem !important;
+        margin: 2rem 0;
+    }
+
+    .mainfooter .socials {
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+
+    .mainfooter .socials svg {
+        margin: 2rem 2rem;
+    }
+}
+
+@media (max-width:600px) {
+    .closebtn {
+        transform: translate(0, -100px);
+    }
+
+    .menuActiveLis {
+        width: 70vw;
+    }
+
+    .menuActiveBtn {
+        width: 70vw;
+    }
+
+    .right .bg {
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .right img {
+        width: 300px;
+    }
+
+    .left2 img {
+        width: 300px;
+    }
+
+    .features .featurestab {
+        margin-bottom: 10rem;
+
+    }
+
+    .section2 .left2 div {
+        height: 30%;
+    }
+
+    .section2 .right2 p {
+        width: 41rem;
+
+    }
+}
+
+@media (max-width:505px) {
+    main h1 {
+        text-align: center !important;
+    }
+
+    main p {
+        text-align: center !important;
+        font-size: 1.6rem !important;
+    }
+
+    .section1 .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .left h1 {
+        font-size: 3.5rem;
+    }
+
+    .left button {
+        padding: 10px 5px;
+        font-weight: normal;
+        font-size: 13px;
+    }
+
+    .section2 .right2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section2 .right2 h1 {
+        font-size: 3.5rem;
+    }
+
+    .section3 h1 {
+        font-size: 3rem;
+    }
+
+    .section3 .para {
+        width: auto;
+        font-size: 2rem I !important;
+        margin: 2rem;
+    }
+
+    .section4 .para {
+        width: auto;
+        margin: 0 2rem;
+    }
+
+    .features .para {
+        width: auto;
+        font-size: 2rem !important;
+        margin: 2rem;
+    }
+
+    .faqs .faq {
+        width: 70vw;
+    }
+
+    .faq .question {
+        font-size: 2rem !important;
+        text-align: left !important;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:420px) {
+    html {
+        font-size: 7px !important;
+    }
+
+    .right img {
+        width: 250px;
+    }
+
+    .right .bg {
+        width: 40rem;
+        height: 20rem;
+        top: 15%;
+    }
+
+    .left p {
+        width: 90vw;
+        margin: 0 2rem;
+        font-size: 2.1rem !important;
+    }
+
+    .features .para {
+        width: 90vw;
+    }
+
+    .left button {
+        font-weight: 100 !important;
+        margin: 4rem 2rem;
+    }
+
+
+    .features .para {
+        width: 90vw;
+        font-size: 2.1rem !important;
+    }
+
+    .section2 .left2 div {
+        height: 25%;
+        top: 15%;
+    }
+
+    .left2 img {
+        width: 220px;
+    }
+
+    .section2 .right2 h1 {
+        font-size: 3rem;
+        width: 80vw;
+    }
+
+    .section2 .right2 p {
+        width: 80vw;
+        margin: 0 2rem;
+    }
+
+    .section3 h1 {
+        font-size: 2.8rem;
+        width: auto;
+    }
+
+    .section3 .para {
+        width: 90vw;
+        margin: 2rem;
+    }
+
+    .section4 .para {
+        width: 90vw;
+        margin: 2rem;
+    }
+
+    .card {
+        margin: 0 !important;
+        width: 90vw;
+    }
+
+    .cards .googleCard {
+        margin-top: 8rem !important;
+    }
+
+    .cards .firefoxCard {
+        margin: 8rem 0 !important;
+    }
+
+    .join h1 {
+        width: 90vw;
+        margin: 2rem 0;
+        font-size: 2.5rem !important;
+    }
+
+    .form input {
+        width: auto;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:300px) {
+    .left div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

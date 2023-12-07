@@ -1,0 +1,689 @@
+   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   html {
+       font-size: 10px;
+       overflow-x: hidden;
+   }
+
+   body {
+       font-family: 'Rubik';
+       font-size: 1.6rem;
+       position: relative;
+       width: 100vw;
+   }
+
+
+   header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 0 20rem;
+       height: 15vh;
+       position: relative;
+   }
+
+   header nav {
+       display: flex;
+       font-size: 1.3rem;
+       align-items: center;
+   }
+
+   nav li {
+       list-style: none;
+       margin: 0 2rem;
+       color: hsl(229, 8%, 60%);
+       font-weight: 500;
+       cursor: pointer;
+       transition: color 0.2s;
+   }
+
+   nav li:hover {
+       color: hsl(0, 94%, 66%);
+   }
+
+   nav button {
+       padding: 10px 30px;
+       margin-left: 2rem;
+       background-color: hsl(0, 94%, 66%);
+       border: 0;
+       color: white;
+       font-weight: bold;
+       cursor: pointer;
+       letter-spacing: 2px;
+       font-size: 1.2rem;
+       border-radius: 5px;
+       transition: all 0.3s;
+       border: 2px solid hsl(0, 94%, 66%);
+   }
+
+   .closebtn {
+       display: none;
+   }
+
+   .menubtn {
+       display: none;
+   }
+
+   nav button:hover {
+       background-color: transparent;
+       /* border: 2px solid hsl(0, 94%, 66%); */
+       color: hsl(0, 94%, 66%);
+   }
+
+   main {
+       width: 100%;
+       height: auto;
+   }
+
+   main .section1 {
+       margin-left: 20rem;
+       margin-top: 5rem;
+       display: flex;
+       justify-content: space-between;
+       font-size: 1.6rem;
+       position: relative;
+   }
+
+   .section1 .left {
+       margin-top: 8rem;
+       animation: slideInLeft 1s ease;
+   }
+
+   .left h1 {
+       font-size: 4rem;
+       font-weight: 500;
+       width: 40rem;
+       margin-bottom: 2rem;
+       line-height: 4.5rem;
+       color: hsl(229, 31%, 21%);
+   }
+
+   .left p {
+       width: 45rem;
+       color: hsl(229, 8%, 60%);
+       line-height: 25px;
+       font-size: inherit;
+   }
+
+   .left button {
+       padding: 15px 20px;
+       margin: 3rem 0;
+       font-weight: 500;
+       border-radius: 5px;
+       border: 0;
+       cursor: pointer;
+   }
+
+   .left .chrome {
+       margin-right: 1rem;
+       background-color: hsl(231, 69%, 60%);
+       color: white;
+       font-weight: bold;
+       border: 2px solid hsl(231, 69%, 60%);
+       transition: all 0.3s;
+   }
+
+   .left .firefox {
+       color: hsl(229, 8%, 60%);
+       font-weight: bold;
+       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+       border: 2px solid #f0f0f0;
+       transition: all 0.3s;
+   }
+
+   .left .chrome:hover {
+       background-color: transparent;
+       color: hsl(231, 69%, 60%);
+   }
+
+   .left .firefox:hover {
+       border: 2px solid black;
+       background-color: transparent;
+       color: black;
+   }
+
+   .right {
+       animation: slideInRight 1s ease;
+   }
+
+   .right div {
+       position: absolute;
+       right: 0;
+       top: 30%;
+       /* transform: translateY(10%); */
+       z-index: -10;
+       height: 36rem;
+       width: 55rem;
+       background-color: hsl(231, 69%, 60%);
+       border-top-left-radius: 30%;
+       border-bottom-left-radius: 30%;
+   }
+
+   .right img {
+       margin-right: 10rem;
+   }
+
+   @keyframes slideInLeft {
+       0% {
+           transform: translateX(-100%);
+       }
+
+       100% {
+           transform: translateX(0);
+       }
+   }
+
+   @keyframes slideInRight {
+       0% {
+           transform: translateX(100%);
+       }
+
+       100% {
+           transform: translateX(0);
+       }
+   }
+
+   .features {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100vw;
+       flex-direction: column;
+       margin-top: 5rem;
+   }
+
+   .features h1 {
+       color: hsl(229, 31%, 21%);
+       font-weight: 500;
+
+   }
+
+   .features .para {
+       width: 50rem;
+       text-align: center;
+       color: hsl(229, 8%, 60%);
+       line-height: 2.5rem;
+       font-size: 1.5rem;
+       margin-top: 1rem;
+   }
+
+   .features .featurestab {
+       display: flex;
+       justify-content: space-between;
+       margin: 5rem 0;
+       transform: translateX(-35px);
+       text-align: center;
+       color: hsl(229, 8%, 60%);
+       border-bottom: 2px solid lightgray;
+   }
+
+   .featurestab p {
+       /* margin: 0 4rem; */
+       padding: 20px 30px;
+       font-weight: 500;
+       cursor: pointer;
+   }
+
+   .featurestab .active {
+       border-bottom: 4px solid hsl(0, 94%, 66%);
+   }
+
+   .section2 {
+       width: 100vw;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       height: 60vh;
+       position: relative;
+   }
+
+   .section2 .left2 div {
+       position: absolute;
+       left: 0;
+       top: 75px;
+       width: 55rem;
+       height: 33rem;
+       background-color: hsl(231, 69%, 60%);
+       z-index: -10;
+       border-top-right-radius: 30%;
+       border-bottom-right-radius: 20%;
+   }
+
+   .section2 .right2 {
+       transform: translateX(-50px);
+   }
+
+   .section2 .right2 h1 {
+       font-size: 3rem;
+       font-weight: 500;
+       color: hsl(229, 31%, 21%);
+       margin-bottom: 2rem;
+   }
+
+   .section2 .right2 p {
+       width: 40rem;
+       line-height: 2.5rem;
+       color: hsl(229, 8%, 60%);
+   }
+
+   .section2 .right2 button {
+       padding: 10px 20px;
+       margin-top: 2rem;
+       background-color: hsl(231, 69%, 60%);
+       color: white;
+       border: 0;
+       border-radius: 5px;
+       cursor: pointer;
+   }
+
+   .section3 {
+       display: flex;
+       width: 100vw;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       margin-top: 15rem;
+   }
+
+   .section3 h1 {
+       color: hsl(229, 31%, 21%);
+   }
+
+   .section3 .para {
+       margin-top: 1rem;
+       width: 50rem;
+       text-align: center;
+       color: hsl(229, 8%, 60%);
+   }
+
+   .section3 .cards {
+       display: flex;
+       width: 100%;
+       align-items: center;
+       justify-content: center;
+       margin-top: 4rem;
+   }
+
+   .cards .googleCard {
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       margin: 0 10rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 2rem;
+       /* margin-bottom: 40rem; */
+       transform: translate(170px, 0px);
+   }
+
+   .googleCard h2 {
+       font-weight: 500;
+       color: hsl(229, 31%, 21%);
+       margin-top: 2rem;
+   }
+
+   .googleCard p {
+       margin-top: 1rem;
+       color: hsl(229, 8%, 60%);
+   }
+
+   .googleCard .dots {
+       margin-top: 4rem;
+       margin-bottom: 2rem;
+       width: 220px;
+   }
+
+   .googleCard button {
+       background-color: hsl(231, 69%, 60%);
+       color: white;
+       border: 2px solid hsl(231, 69%, 60%);
+       padding: 15px 0;
+       width: 100%;
+       border-radius: 5px;
+       margin-top: 1rem;
+       font-weight: bold;
+       cursor: pointer;
+       transition: 0.4s all ease-out;
+   }
+
+   .googleCard button:hover {
+       background-color: transparent;
+       color: hsl(231, 69%, 60%);
+   }
+
+   .cards .firefoxCard {
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       margin: 0 10rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 2rem;
+       /* margin-bottom: 40rem; */
+       transform: translate(15px, 50px);
+   }
+
+   .firefoxCard h2 {
+       font-weight: 500;
+       color: hsl(229, 31%, 21%);
+       margin-top: 2rem;
+   }
+
+   .firefoxCard p {
+       margin-top: 1rem;
+       color: hsl(229, 8%, 60%);
+   }
+
+   .firefoxCard .dots {
+       margin-top: 4rem;
+       margin-bottom: 2rem;
+       width: 220px;
+   }
+
+   .firefoxCard button {
+       background-color: hsl(231, 69%, 60%);
+       color: white;
+       border: 2px solid hsl(231, 69%, 60%);
+       padding: 15px 0;
+       width: 100%;
+       border-radius: 5px;
+       margin-top: 1rem;
+       font-weight: bold;
+       cursor: pointer;
+       transition: 0.4s all ease-out;
+   }
+
+   .firefoxCard button:hover {
+       background-color: transparent;
+       color: hsl(231, 69%, 60%);
+   }
+
+   .cards .operaCard {
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       margin: 0 10rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 2rem;
+       /* margin-bottom: 40rem; */
+       transform: translate(-135px, 100px);
+   }
+
+   .operaCard h2 {
+       font-weight: 500;
+       color: hsl(229, 31%, 21%);
+       margin-top: 2rem;
+   }
+
+   .operaCard p {
+       margin-top: 1rem;
+       color: hsl(229, 8%, 60%);
+   }
+
+   .operaCard .dots {
+       margin-top: 4rem;
+       margin-bottom: 2rem;
+       width: 220px;
+   }
+
+   .operaCard button {
+       background-color: hsl(231, 69%, 60%);
+       color: white;
+       border: 2px solid hsl(231, 69%, 60%);
+       padding: 15px 0;
+       width: 100%;
+       border-radius: 5px;
+       margin-top: 1rem;
+       font-weight: bold;
+       cursor: pointer;
+       transition: 0.4s all ease-out;
+   }
+
+   .operaCard button:hover {
+       background-color: transparent;
+       color: hsl(231, 69%, 60%);
+   }
+
+   .section4 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       margin-top: 30rem;
+   }
+
+   .section4 h1 {
+       font-weight: 500;
+       color: hsl(229, 31%, 21%);
+       font-size: 3rem;
+       margin-bottom: 2rem;
+   }
+
+   .section4 .para {
+       width: 500px;
+       text-align: center;
+       color: hsl(229, 8%, 60%);
+   }
+
+   .section4 .faqs {
+       margin-top: 6rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .faqs .faq {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       /* align-items: center; */
+       border: 0;
+       border-top: 2px solid lightgray;
+       padding: 20px 0;
+       width: 35vw;
+       cursor: pointer;
+       overflow: hidden;
+   }
+
+
+   .faqs .faq4 {
+       border-bottom: 2px solid lightgray;
+   }
+
+   .faq .questionDiv {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       width: 100%;
+   }
+
+   .faq .question {
+       font-size: 1.6rem;
+       color: hsl(229, 31%, 21%);
+       font-weight: 450;
+       transition: 0.3s color;
+   }
+
+   .faq:hover .question {
+       color: hsl(0, 94%, 66%);
+   }
+
+   .faq .answer {
+       height: 0;
+       opacity: 0;
+       pointer-events: none;
+       /* margin-top: 2rem; */
+       color: hsl(229, 8%, 60%);
+       line-height: 3rem;
+   }
+
+   .showAnswer .answer {
+       height: auto;
+       opacity: 1;
+       transition: 0.3s all ease;
+       margin-top: 2rem;
+   }
+
+   .showAnswer img {
+       transform: rotate(180deg);
+
+   }
+
+   .faq img {
+       margin-right: 1rem;
+       transition: 0.4s transform;
+   }
+
+   .faqs button {
+       background-color: hsl(231, 69%, 60%);
+       color: white;
+       border: 0;
+       padding: 15px 20px;
+       border-radius: 5px;
+       font-weight: bold;
+       margin: 6rem 0;
+       cursor: pointer;
+   }
+
+   footer {
+       margin-top: 10rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-direction: column;
+       color: white;
+       background-color: hsl(231, 69%, 60%);
+       height: 45vh;
+       width: 100%;
+   }
+
+   footer .join {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       height: 100%;
+   }
+
+   .join span {
+       font-size: 11px;
+       font-weight: 450;
+       letter-spacing: 5px;
+       text-align: center;
+       margin-top: 5rem;
+   }
+
+   .join h1 {
+       margin: 2rem;
+       font-weight: 500;
+       font-size: 3rem;
+       width: 450px;
+       text-align: center;
+   }
+
+   .join input {
+       padding: 10px;
+       width: 270px;
+       border: 0;
+       outline: 0;
+       border-radius: 4px;
+       font-family: 1.6px;
+   }
+
+   .join .error {
+       transform: translate(-50px, 5px);
+       opacity: 0;
+       pointer-events: none;
+       transition: 0.3s all;
+   }
+
+   .join .showError {
+       opacity: 1;
+       transform: translate(-30px, 5px);
+   }
+
+   .join button {
+       padding: 10px 20px;
+       border-radius: 4px;
+       border: 0;
+       outline: 0;
+       background-color: hsl(0, 94%, 66%);
+       color: white;
+       font-weight: bold;
+       /* margin-left: 2rem; */
+       cursor: pointer;
+       transition: 0.4s all;
+   }
+
+   .join button:hover {
+       background-color: white;
+       color: black;
+   }
+
+   .errormsg {
+       font-size: 12px;
+       transform: translate(-57px, -10px);
+       background-color: hsl(0, 94%, 66%);
+       width: 275px;
+       padding: .5rem;
+       opacity: 0;
+       pointer-events: none;
+       transition: 0.3s all;
+       border-radius: 3px;
+   }
+
+   .showErrormsg {
+       opacity: 1;
+       transform: translate(-57px, 0px);
+   }
+
+   .mainfooter {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 100%;
+       background-color: hsl(229, 31%, 21%);
+   }
+
+   .mainfooter nav {
+       display: flex;
+       margin: 2rem 20rem;
+       align-items: center;
+   }
+
+   .mainfooter .logo {
+       width: 180px;
+       background-color: white;
+       color: white;
+       margin-right: 4rem;
+   }
+
+   nav li {
+       font-size: 1.3rem;
+   }
+
+   .mainfooter .socials {
+       margin-right: 20rem;
+   }
+
+   .socials svg {
+       margin: 0 1rem;
+       cursor: pointer;
+   }
+
+   .socials svg path {
+       transition: 0.2s all;
+   }
+
+   .socials svg path:hover {
+       fill: hsl(0, 94%, 66%);
+   }
+
+   .socials svg path:hover {
+       fill: hsl(0, 94%, 66%);
+   }

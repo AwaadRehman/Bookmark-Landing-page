@@ -558,7 +558,7 @@
        flex-direction: column;
        color: white;
        background-color: hsl(231, 69%, 60%);
-       height: 45vh;
+       /* height: 45vh; */
        width: 100%;
    }
 
@@ -643,6 +643,9 @@
        pointer-events: none;
        transition: 0.3s all;
        border-radius: 3px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
    }
 
    .showErrormsg {

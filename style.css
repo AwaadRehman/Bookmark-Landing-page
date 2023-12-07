@@ -568,6 +568,7 @@
        align-items: center;
        flex-direction: column;
        height: 100%;
+       margin-bottom: 20px;
    }
 
    .join span {
@@ -604,7 +605,7 @@
 
    .join .showError {
        opacity: 1;
-       transform: translate(-30px, 5px);
+       transform: translate(95px, 3px);
    }
 
    .join button {
@@ -618,6 +619,7 @@
        /* margin-left: 2rem; */
        cursor: pointer;
        transition: 0.4s all;
+       margin-left: 10px;
    }
 
    .join button:hover {
@@ -627,9 +629,9 @@
 
    .errormsg {
        font-size: 12px;
-       transform: translate(-57px, -10px);
+       transform: translate(0, -2px);
        background-color: hsl(0, 94%, 66%);
-       width: 275px;
+       width: 271px;
        padding: .5rem;
        opacity: 0;
        pointer-events: none;
@@ -639,7 +641,7 @@
 
    .showErrormsg {
        opacity: 1;
-       transform: translate(-57px, 0px);
+       transform: translate(0px, 0px);
    }
 
    .mainfooter {
@@ -686,4 +688,10 @@
 
    .socials svg path:hover {
        fill: hsl(0, 94%, 66%);
+   }
+
+   .end {
+       display: flex;
+       width: 100%;
+       justify-content: center;
    }

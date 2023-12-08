@@ -587,19 +587,29 @@
        text-align: center;
    }
 
+   .email {
+       width: 270px;
+   }
+
    .join input {
        padding: 10px;
-       width: 270px;
+       width: 100%;
        border: 0;
        outline: 0;
        border-radius: 4px;
        font-family: 1.6px;
    }
 
+   .form {
+       display: flex;
+       align-items: baseline;
+   }
+
    .form .email {
        display: flex;
        align-items: center;
        justify-content: center;
+       flex-direction: column;
    }
 
    .join .error {
@@ -637,7 +647,7 @@
        font-size: 12px;
        transform: translate(0, -2px);
        background-color: hsl(0, 94%, 66%);
-       width: 271px;
+       width: 100%;
        padding: .5rem;
        opacity: 0;
        pointer-events: none;
